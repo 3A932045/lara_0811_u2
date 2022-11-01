@@ -31,8 +31,8 @@ Route::get('r2',function (){
     return view('welcome');
 });
 /**
- * 設定Route 接收參數
+ * 設定Route 接收參數 -> 修改參數成選擇性
  */
-Route::get('hello/{name}',function ($name){
+Route::get('hello/{name?}',function ($name = 'Everybody'){
     return 'Hello,'.$name;
 });
