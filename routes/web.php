@@ -30,4 +30,9 @@ Route::get('r1', function () {
 Route::get('r2',function (){
     return view('welcome');
 });
-
+/**
+ * 設定Route 接收參數
+ */
+Route::get('hello/{name}',function ($name){
+    return 'Hello,'.$name;
+});
