@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 /**
- * 設定回傳 View
+ * 設定回傳 字串welcome
  */
 Route::get('/', function () {
-    return view('welcome');
+    return 'welcome';
 });
-    
+
