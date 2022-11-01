@@ -31,11 +31,11 @@ Route::get('r2',function (){
     return view('welcome');
 });
 /**
- * 設定Route 接收參數 -> 修改參數成選擇性
+ * 設定Route 接收參數 -> 修改參數成選擇性+為Route 取名
  */
 Route::get('hello/{name?}',function ($name = 'Everybody'){
     return 'Hello,'.$name;
-});
+})->name('hello.index');
 /**
  * 測試 route:list用 Route
  */
