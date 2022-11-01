@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 /**
+ * 設定Router 回傳 view
+ */
+Route::get('/',function (){
+    return view('welcome');
+});
+/**
  * 設定Router 跳轉路由
  */
 Route::get('r1', function () {
