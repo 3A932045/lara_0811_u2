@@ -58,4 +58,4 @@ Route::group(['prefix'=>'admin'],function(){
 });
 
 use App\Http\Controllers\HomeController;
-Route::get('home',[HomeController::class,'index'])->name('home.index'); 
+Route::get('home',[HomeController::class,'index'])->name('home.index');
