@@ -36,3 +36,9 @@ Route::get('r2',function (){
 Route::get('hello/{name?}',function ($name = 'Everybody'){
     return 'Hello,'.$name;
 });
+/**
+ * 測試 route:list用 Route
+ */
+Route::get('test',function (){
+    return '測試route:list';
+});
